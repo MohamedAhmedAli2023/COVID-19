@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 4000px;
+}
+/* ====== navbar ====== */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(247, 249, 254);
+  z-index: 5498465498;
+}
+header nav {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 25px;
+}
+
+header nav .logo {
+  width: 25%;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+header nav .logo span {
+  color: rgb(80, 101, 142);
+}
+header nav .bars {
+  display: none;
+}
+header nav .navlinks ul {
+  display: flex;
+  list-style-type: none;
+}
+header nav .navlinks ul li {
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 30px;
+}
+header nav .navlinks ul li a {
+  text-decoration: none;
+  color: rgb(80, 101, 142);
+}
+header nav .navlinks ul li a.do {
+  background-color: rgb(0, 123, 255);
+  border: 0;
+  border-radius: 20px;
+  padding: 15px 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+header nav .navlinks ul li a.do:hover {
+  background-color: rgb(0, 85, 175);
+}
+/* ======= section 1 ======== */
+#home {
+  padding-top: 100px;
+  background-image: url(../imgs/Header.png);
+  background-size: cover;
+  background-color: rgb(247, 249, 254);
+  padding-bottom: 20px;
+}
+#home .container {
+  width: 70%;
+  margin: auto;
+}
+#home .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#home .container .row .home-caption,
+#home .container .row .home-img {
+  width: 45%;
+}
+#home .container .row .home-caption .caption-row1 {
+  display: flex;
+  color: rgb(80, 101, 142);
+}
+#home .container .row .home-caption .caption-row1 h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 80px;
+}
+#home .container .row .home-caption .caption-row1 div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#home .container .row .home-caption .caption-row1 div h4 {
+  color: red;
+}
+#home .container .row .home-caption .caption-row1 div h4,
+#home .container .row .home-caption .caption-row1 div h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  width: 100%;
+}
+#home .container .row .home-caption .caption-row2 p {
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.5;
+  margin-bottom: 45px;
+}
+#home .container .row .home-caption .caption-row3 {
+  display: flex;
+  margin-bottom: 20px;
+}
+#home .container .row .home-caption .caption-row3 .co-btn,
+#home .container .row .home-caption .caption-row3 .caption-link {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+#home .container .row .home-caption .caption-row3 .co-btn a {
+  background-color: rgb(0, 123, 255);
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 19px;
+}
+#home .container .row .home-caption .caption-row3 .co-btn a:hover {
+  background-color: rgb(0, 85, 175);
+}
+#home .container .row .home-caption .caption-row3 .caption-link a {
+  text-decoration: none;
+  color: rgb(0, 123, 255);
+}
+#home .container .row .home-caption .caption-row3 .caption-link a:hover {
+  color: rgb(0, 85, 175);
+  text-decoration: underline;
+}
+#home .container .row .home-caption .caption-row4 {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(80, 101, 142);
+}
+#home .container .row .home-caption .caption-row4 div {
+  width: calc(100% / 3);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+#home .container .row .home-caption .caption-row4 div h6 {
+  font-weight: 100;
+}
+#home .container .row .home-img img {
+  width: 100%;
+}
+/* ====== about ====== */
+#about .container {
+  width: 70%;
+  margin: auto;
+}
+
+#about .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px;
+  margin: 30px auto;
+  color: rgb(80, 101, 142);
+}
+#about .about-text {
+  width: 60%;
+}
+#about .about-text h3 {
+  color: rgb(63, 111, 253);
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+#about .about-text h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+#about .about-text p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+#about .about-text p.about-p {
+  font-size: 20px;
+  font-weight: bold;
+}
+#about .about-list {
+  width: 35%;
+}
+#about .about-list ul {
+  list-style-type: none;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+#about .about-list ul > li {
+  font-size: 22px;
+  font-weight: bold;
+  border: 1px solid rgba(77, 77, 77, 0.2);
+  padding: 20px 18px;
+}
+
+#about .about-list ul a {
+  text-decoration: none;
+  color: rgb(0, 123, 255);
+  &:hover {
+    text-decoration: underline;
+    color: rgb(0, 86, 179);
+  }
+  & li {
+    border: 1px solid rgba(77, 77, 77, 0.2);
+    padding: 20px 25px;
+    & i {
+      float: right;
+    }
+  }
+}
+/* ====== spread ====== */
+#transmission {
+  background-color: rgb(247, 249, 254);
+}
+#transmission .container {
+  width: 70%;
+  margin: auto;
+  padding: 50px;
+}
+#transmission .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: rgb(80, 101, 142);
+}
+#transmission .row .spread {
+  width: 100%;
+  text-align: center;
+  & h5 {
+    color: rgb(0, 123, 255);
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  & h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+  & p {
+    margin-bottom: 15px;
+  }
+}
+#transmission .row .card {
+  width: calc(90% / 3);
+  background-color: white;
+  border: 1px solid rgba(31, 31, 31, 0.2);
+  & img {
+    width: 100%;
+    background-color: rgb(247, 249, 254);
+    border-bottom: 5px solid rgb(110, 159, 255);
+  }
+  & .card-body {
+    padding: 15px;
+    & h5 {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 15px;
+    }
+  }
+}
+#transmission .row .spread-btn {
+  width: 100%;
+  margin: 50px 0px 60px;
+  text-align: center;
+  & button {
+    background-color: rgb(0, 123, 255);
+    color: white;
+    padding: 20px 15px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 20px;
+    &:hover {
+      background-color: rgb(0, 86, 179);
+      cursor: pointer;
+    }
+    & i {
+      margin-right: 30px;
+    }
+  }
+}
